@@ -6,7 +6,6 @@ una dirección para quien no sabe es una como esta "C:\Windows\System32" esta es
 
 
 
-bash
 @echo off
 title Shortcut
 color 0b
