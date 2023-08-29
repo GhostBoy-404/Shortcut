@@ -10,19 +10,30 @@ una dirección para quien no sabe es una como esta "C:\Windows\System32" esta es
 title Shortcut
 color 0b
 
-:seleccion
+:selection
 rem Program list
 cls
 echo.
 echo *******************************
 echo * [1] BLOC DE NOTAS           *
+echo *                             * 
 echo * [2] CMD                     *
+echo *                             *    
 echo * [3] PYTHON                  *
+echo *                             *
 echo * [4] EXPLORADOR DE ARCHIVOS  *
+echo *                             *
 echo * [5] GOOGLE CHROME           *
+echo *                             *
 echo * [6] TECLADO EN PANTALLA     *
+echo *                             * 
 echo * [7] LUPA                    *
-echo * [8] SALIR                   *
+echo *                             *   
+echo * [8] GITHUB                  *
+echo *                             *
+echo * [9] YOUTUBE                 *
+echo *                             *
+echo * [10] SALIR                  *
 echo *******************************
 echo.
 rem select the number of the program
@@ -36,9 +47,19 @@ if %prog%==4 start C:\Users\Alma\OneDrive\Escritorio\HACKER27\Explorador
 if %prog%==5 start C:\Users\Alma\OneDrive\Escritorio\HACKER27\hacking\chrome.exe
 if %prog%==6 start C:\Windows\System32\osk.exe
 if %prog%==7 start C:\Windows\System32\Magnify.exe
-if %prog%==8 goto salir
+if %prog%==8 start https://github.com/Hacker273020
+if %prog%==9 goto op1
+if %prog%==10 goto salir
 
-goto seleccion
+goto selection
+
+op1
+cls
+echo.
+set /p buscar=Buscar:
+start https://www.youtube.com/results?search_query=%buscar%
+
+goto selection
 
 :valid_seleccion
 echo.
